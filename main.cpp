@@ -3,10 +3,11 @@
 int main()
 {
 	int Size;
+	int* Numbers = nullptr;
 	std::cout << "숫자를 입력하세요 : ";
 	std::cin >> Size;
 
-	int* Numbers = new int[Size];
+	Numbers = new int[Size];
 
 	if (!Numbers)
 	{
