@@ -63,7 +63,7 @@ int main()
 	int Index = FoundIndex(Sentence, FoundChar);
 	if (Index != -1)
 	{
-		std::cout << FoundChar << "는 " << Index << "번 째에 있습니다.";
+		std::cout << FoundChar << "는 " << Index + 1<< "번 째에 있습니다.";
 	}
 	else
 	{
