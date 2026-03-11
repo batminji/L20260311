@@ -15,15 +15,6 @@ int CountLength(char* Sentence)
 void Replace(char* Sentence, char TargetChar, char ReplaceChar, int Length)
 {
 	int Index = 0;
-	
-	/*while (Sentence[Index] != '\0')
-	{
-		if (Sentence[Index] == TargetChar)
-		{
-			Sentence[Index] = ReplaceChar;
-		}
-		++Index;
-	}*/
 
 	for (int i = 0; i < Length; ++i)
 	{
@@ -37,15 +28,6 @@ void Replace(char* Sentence, char TargetChar, char ReplaceChar, int Length)
 int Search(char* Sentence, char SearchChar, int Length)
 {
 	int Index = 0;
-
-	/*while (Sentence[Index] != '\0')
-	{
-		if (Sentence[Index] == SearchChar)
-		{
-			return Index;
-		}
-		++Index;
-	}*/
 
 	for (int i = 0; i < Length; ++i)
 	{
