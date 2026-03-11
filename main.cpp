@@ -1,22 +1,25 @@
 #include <iostream>
-#include "StringUtil.h"
 
 int main()
 {
-	char Temp[100] = "Hello World";
+	int Size;
+	std::cout << "숫자를 입력하세요 : ";
+	std::cin >> Size;
 
-	/*for (int i = 0; i < 100; ++i)
+	int* Numbers = new int[Size];
+
+	for (int i = 0; i < Size; ++i)
 	{
-		Temp[i] = 'A';
-	}*/
+		Numbers[i] = i + 1;
+	}
 
-	int StringLength = Length(Temp, 100);
+	for (int i = 0; i < Size; ++i)
+	{
+		std::cout << Numbers[i] << " ";
+	}
+	std::cout << std::endl;
 
-	Replace(Temp, 100, 'e', 'f');
+	delete[] Numbers;
 
-	Print(Temp, 100);
-
-	int Index = IndexOf(Temp, 100, 'W');
-
-	std::cout << Index << std::endl;
+	return 0;
 }
