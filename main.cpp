@@ -20,6 +20,7 @@ int main()
 	std::cout << std::endl;
 
 	delete[] Numbers;
+	Numbers = nullptr;
 
 	return 0;
 }
