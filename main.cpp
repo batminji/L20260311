@@ -8,6 +8,11 @@ int main()
 
 	int* Numbers = new int[Size];
 
+	if (!Numbers)
+	{
+		return -1;
+	}
+
 	for (int i = 0; i < Size; ++i)
 	{
 		Numbers[i] = i + 1;
